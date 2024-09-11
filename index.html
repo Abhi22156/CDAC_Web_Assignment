@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage displayed in the browser tab -->
+    <title>Login Page</title>
+
+    <!-- Link to the external CSS stylesheet for styling the page -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Container for the login form -->
+    <div class="login-container">
+        <!-- Form for user login -->
+        <form id="loginForm">
+            <!-- Heading for the form -->
+            <h2>Login</h2>
+
+            <!-- Input group for the email address -->
+            <div class="input-group">
+                <!-- Label for the email input field -->
+                <label for="username">Email</label>
+                <!-- Input field for the email address -->
+                <input type="email" id="username" placeholder="Enter email" required>
+                <!-- Placeholder for error messages related to the email input -->
+                <small>Error message</small>
+            </div>
+
+            <!-- Input group for the password -->
+            <div class="input-group">
+                <!-- Label for the password input field -->
+                <label for="password">Password</label>
+                <!-- Input field for the password -->
+                <input type="password" id="password" placeholder="Enter password" required>
+                <!-- Placeholder for error messages related to the password input -->
+                <small>Error message</small>
+            </div>
+
+            <!-- Checkbox to toggle the visibility of the password -->
+            <div class="input-group">
+                <input type="checkbox" id="showPassword"> Show Password
+            </div>
+
+            <!-- Submit button for the login form -->
+            <button type="submit">Login</button>
+
+            <!-- Container for displaying the response message after form submission -->
+            <div id="responseMessage"></div>
+        </form>
+    </div>
+
+    <!-- Link to the external JavaScript file for form handling and interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
